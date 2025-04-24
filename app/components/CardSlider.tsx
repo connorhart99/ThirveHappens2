@@ -144,7 +144,6 @@ export default function CardSlider({ items, renderCard, title }: CardSliderProps
 
       <style jsx global>{`
         .keen-slider {
-          min-height: 500px;
           display: flex;
           overflow: visible !important;
         }
@@ -158,9 +157,6 @@ export default function CardSlider({ items, renderCard, title }: CardSliderProps
           margin: 0 auto;
         }
         @media (min-width: 768px) {
-          .keen-slider {
-            min-height: 600px;
-          }
           .keen-slider__slide {
             min-width: 600px;
             width: 600px;
