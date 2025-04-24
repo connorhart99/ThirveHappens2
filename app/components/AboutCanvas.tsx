@@ -16,8 +16,18 @@ const aboutItems = [
   },
   {
     title: 'Our Founder',
-    description: 'The principles and training are based on the Lived Experiences of Founder, Scott Hanley, who is internationally recognised for beating an incurable, degenerative, fatal Neurological disease.',
+    description: 'Scott Hanley, a native of Belfast and former British Army officer, brings a unique blend of military leadership and personal triumph to his resilience work. Diagnosed with Parkinson\'s in 2017, he faced debilitating symptoms including muscle rigidity, tremors, and cognitive decline.',
     image: "/assets/our-founder.jpeg"
+  },
+  {
+    title: 'The Journey',
+    description: 'Through intentional mindset and expectation discipline, along with functional fitness and lifestyle choices, Scott achieved the \'impossible\' and reversed his symptoms. He is now 3+ years symptom-free and continues to Thrive despite facing a previously incurable condition.',
+    image: "/assets/the-journey.jpeg"
+  },
+  {
+    title: 'The Impact',
+    description: 'Combining military service experience with his lived experience of overcoming Parkinson\'s Disease, Scott now works with individuals and business leaders to cultivate habits that support both physical and mental performance, inspiring them to strive to Thrive.',
+    image: "/assets/the-impact.jpeg"
   }
 ];
 

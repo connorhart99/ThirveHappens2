@@ -15,7 +15,7 @@ const ContactCanvas = () => {
               <button
                 onClick={() => {
                   // Try multiple approaches for email
-                  const email = 'support@nockly.com';
+                  const email = 'scott@thrivehappens.com';
                   
                   // Try to open mail client - create a hidden link and click it
                   const link = document.createElement('a');
@@ -33,7 +33,7 @@ const ContactCanvas = () => {
                 }}
                 className="text-white hover:underline transition-colors bg-transparent border-none p-0 m-0 cursor-pointer font-normal"
               >
-                support@nockly.com
+                scott@thrivehappens.com
               </button>
             </p>
           </div>
