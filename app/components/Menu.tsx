@@ -8,8 +8,7 @@ const sections = [
   { id: 'hero', label: 'Home', index: 0 },
   { id: 'services', label: 'Services', index: 1 },
   { id: 'about', label: 'About', index: 2 },
-  { id: 'gallery', label: 'Gallery', index: 3 },
-  { id: 'contact', label: 'Contact', index: 4 }
+  { id: 'contact', label: 'Contact', index: 3 }
 ];
 
 const Menu = () => {

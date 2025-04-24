@@ -5,7 +5,6 @@ import CanvasContainer from './components/CanvasContainer';
 import HeroCanvas from './components/HeroCanvas';
 import ServicesCanvas from './components/ServicesCanvas';
 import AboutCanvas from './components/AboutCanvas';
-import GalleryCanvas from './components/GalleryCanvas';
 import ContactCanvas from './components/ContactCanvas';
 
 export default function Home() {
@@ -21,10 +20,6 @@ export default function Home() {
     {
       id: 'about',
       content: <AboutCanvas />
-    },
-    {
-      id: 'gallery',
-      content: <GalleryCanvas />
     },
     {
       id: 'contact',

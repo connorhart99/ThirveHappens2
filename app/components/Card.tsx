@@ -27,11 +27,11 @@ export default function Card({
         }`}
       >
         <div 
-          className={`bg-forest-green rounded-lg overflow-hidden shadow-lg w-[90vw] md:w-[500px] max-w-[500px] h-[600px] md:h-[650px] flex flex-col justify-between cursor-pointer ${className}`}
+          className={`bg-forest-green rounded-lg overflow-hidden shadow-lg w-[90vw] md:w-[500px] max-w-[500px] h-[600px] md:h-[650px] flex flex-col cursor-pointer relative ${className}`}
           onClick={isActive && onClick ? onClick : undefined}
         >
           {imageUrl && (
-            <div className="relative w-full flex-grow overflow-hidden" style={{ minHeight: "200px" }}>
+            <div className="absolute inset-0 w-full h-full overflow-hidden">
               <img
                 src={imageError ? '/assets/placeholder.jpeg' : imageUrl}
                 alt={title}
@@ -40,7 +40,7 @@ export default function Card({
               />
             </div>
           )}
-          <div className="p-6 bg-forest-green text-center overflow-auto" style={{ maxHeight: "350px" }}>
+          <div className="mt-auto p-6 bg-forest-green text-center relative z-10">
             <h3 className="text-xl md:text-2xl font-semibold mb-2">{title}</h3>
             {children}
           </div>
