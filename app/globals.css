@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #260d00;
+  --forest-green: #1a3a1a;
+  --deep-burgundy: #380000;
+}
+
+@layer base {
+  :root {
+    --background: #260d00;
+    --forest-green: #1a3a1a;
+    --deep-burgundy: #380000;
+  }
+}
+
+@layer components {
+  .bg-dark-brown {
+    background-color: var(--background);
+  }
+  .bg-forest-green {
+    background-color: var(--forest-green);
+  }
+  .bg-deep-burgundy {
+    background-color: var(--deep-burgundy);
+  }
+  .text-dark-brown {
+    color: var(--background);
+  }
+  .text-forest-green {
+    color: var(--forest-green);
+  }
+  .text-deep-burgundy {
+    color: var(--deep-burgundy);
+  }
+  .border-dark-brown {
+    border-color: var(--background);
+  }
+  .border-forest-green {
+    border-color: var(--forest-green);
+  }
+  .border-deep-burgundy {
+    border-color: var(--deep-burgundy);
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: var(--background);
+  background-image: url('/assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  height: 100%;
+  width: 100%;
+  
+  /* Optimize rendering for performance */
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Apply hardware acceleration and prevent flickering */
+html, body, #__next, main, div {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  perspective: 1000;
+  -webkit-perspective: 1000;
+}
+
+/* Prevent text selection which can cause flickering */
+body {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Hide scrollbars but maintain functionality */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom height for portfolio container */
+@media (min-width: 768px) {
+  .md\:h-108 {
+    height: 27rem; /* 432px */
+  }
+}
+
+@layer components {
+  .fullscreen-canvas {
+    @apply w-screen h-screen flex flex-col justify-center items-center overflow-hidden;
+    /* Enable hardware acceleration */
+    transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+} 
